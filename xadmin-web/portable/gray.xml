@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<portable-config>
+
+	<config-file path="WEB-INF/classes/config/log4j.xml">
+        <replace xpath="//root/level/@value">WARN</replace>
+    </config-file>
+
+	<config-file path="WEB-INF/classes/server.properties">
+		<replace key="config.env">gray</replace>
+		<replace key="dubbo.protocol.port">20880</replace>
+		<replace key="dubbo.protocol.register">true</replace>
+		<replace key="dubbo.registry.address">xx.xx.xx.xx:2181,xx.xx.xx.xx:2181,xx.xx.xx.xx:2181</replace>
+		<replace key="dubbo.registry.register">true</replace>
+		
+		
+		<replace key="sql.logger.level">WARN</replace>
+		
+		<replace key="cache.redis.host">xx.xx.xx.xx</replace>
+		<replace key="cache.redis.port">6379</replace>
+		<replace key="cache.redis.password">password</replace>
+		
+	</config-file>
+
+</portable-config>
+
