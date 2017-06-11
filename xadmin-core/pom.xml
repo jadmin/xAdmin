@@ -81,7 +81,7 @@
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
-		</dependency>
+		</dependency> 
 
 		<dependency>
 			<groupId>mysql</groupId>
